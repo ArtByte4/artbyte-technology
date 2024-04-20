@@ -10,20 +10,30 @@
 </head>
 
 <body>
+    <div class="load" id="load">
+        <img src="./src/img/Logo _ART_BYTE.png" alt="">
+    </div>
     <div class="nav">
         <img src="./src/img/Logo _ART_BYTE.png" alt="" class="logo">
         <div class="navigate">
-            <ul class="link-list">
+            <ul class="link-list" id="hide_menu">
                 <li><a href="#inicio" class="links">Inicio</a></li>
                 <li><a href="#documento" class="links">Documento</a></li>
                 <li><a href="#integrantes" class="links">Integrantes</a></li>
             </ul>
-            <ul class="btn-menu">
-                <li >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: #030d33;"><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg>
+            <ul class="btn-menu" id="hide_btn">
+                <li>
+                    <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: #030d33;"><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg>
                 </li>
             </ul>
         </div>
+    </div>
+    <div class="menu_movil" id="menu_movil">
+        <ul class="link-list" id="hide_menu">
+            <li><a href="#inicio" class="">Inicio</a></li>
+            <li><a href="#documento" class="">Documento</a></li>
+            <li><a href="#integrantes" class="">Integrantes</a></li>
+        </ul>
     </div>
     <div class="sec-resumen" id="inicio">
         <div class="container-sec-resumen">
@@ -49,6 +59,13 @@
                     máquina autónoma</span> capaz de realizar un tatuaje tipográfico en la parte del
                 antebrazo.</p>
 
+        </div>
+    </div>
+
+    <div class="videoClip">
+        <div class="container-video-clip">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/22q6pZJb5KE?si=RJnyFh498OKl6DZR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h2><span class="important-text">Speech Video presentación proyecto</span></h2>
         </div>
     </div>
 
@@ -180,7 +197,7 @@
     </div> -->
 
 
-    <script type="module" src="./src/js/index.js"></script>
+    <script  src="./src/js/index.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,7 @@
     font-family: 'Phenomen';
     src: url('./WEB/Phenomena-Light.woff') format('woff');
 }
+
 body{
     font-family: 'Phenomen';
 }
@@ -21,6 +22,20 @@ body{
     --font-size-title: 32px;
     --font-size-big: 39px;
 }
+
+/* === scroll === */
+body::-webkit-scrollbar {
+    width: 12px;           
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--color-primary);      
+  }
+  
+  body::-webkit-scrollbar-thumb {   
+    border-radius: 20px;     
+    border: 1px solid var(--color-secundary); 
+  }
 
 .logo{
     width: 100px;
@@ -69,6 +84,26 @@ ul{
     .nav{
         justify-content: space-between;
     }
+}
+
+/* === video clip === */
+.videoClip{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+.container-video-clip{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-video-clip h2{
+    font-size: var(--font-size-title);
+    margin-left: 40px;
 }
 
 /* ======= Integrantes ======= */
@@ -201,6 +236,17 @@ ul{
         width: 40%;
         margin: 10px;
     }
+    .container-video-clip{
+        width: 90%;
+        flex-wrap: wrap-reverse;
+    }
+    .container-video-clip h2{
+        margin: 50px 0;
+    }
+    .container-video-clip iframe{
+        width: 80%;
+        height: 70%;
+    }
 }
 
 
@@ -254,7 +300,7 @@ ul{
 
  .sec-objetivoG{
     width: 100%;
-    height: 400px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -352,10 +398,66 @@ td {
     background-color: #030d3348;
 }
 
+/* ===== menu movil ===== */
 
 
+.menu_movil{
+    background-color: var(--color-terciaryo);
+    display: none;
+}
+.menu_movil a{
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.menu_movil ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu_movil li{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu_movil li:hover{
+    background-color: #02491c50;
+}
+
+/* === loader === */
+
+.load{
+    background-color:#fff;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: popIn;
+    animation-duration: 3s;
+}
 
 
+.load img{
+    width: 20%;
+}
+
+@keyframes popIn {
+    from {
+        clip-path: circle(134.6% at 5% 95%);
+   }
+    to {
+        clip-path: circle(0.2% at 0 100%);
+        display: none;
+    }
+ }
 
 @keyframes animate-text {
     0%{
@@ -410,4 +512,22 @@ td {
         --font-size-title: 29px;
         --font-size-big: 37px;
     }
+    .load img{
+        width: 40%;
+    }
+    .container-video-clip{
+        width: 95%;
+        flex-wrap: wrap-reverse;
+    }
+    .container-video-clip h2{
+        margin: 50px 0;
+    }
+    .container-video-clip iframe{
+        width: 90%;
+        height: 80%;
+    }
+    .container-video-clip h2{
+        width: 90%;
+    }
 }
+
