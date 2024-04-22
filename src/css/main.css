@@ -535,5 +535,19 @@ td {
     .container-video-clip h2{
         width: 90%;
     }
+
+    footer {
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        width: 1000%;
+        height: 40px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    23.
+
 }
 
