@@ -55,7 +55,13 @@ body::-webkit-scrollbar {
     text-decoration: none;
     color:var(--color-primary);
     font-size: var(--font-size-text);
+    padding: 5px 15px;
 
+}
+
+.links:hover{
+    transition: 2s;
+    background-color: var(--color-terciaryo);
 }
 
 li{
@@ -440,8 +446,8 @@ td {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-name: popIn;
-    animation-duration: 3s;
+    /* animation-name: popIn;
+    animation-duration: 3s; */
 }
 
 
