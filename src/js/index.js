@@ -1,13 +1,12 @@
 
+// === Preloader ===
 let load = document.getElementById('load')
 
-window.addEventListener('load', () => {
-   setTimeout(() => {
-    load.style.display = 'none'
+window.onload = () => {
+    load.style.display='none'
+}
 
-   }, 2000)
-  
-})
+// === Btn Menu Movile ===
 let menu = document.getElementById('menu');
 let menu_movile = document.getElementById('menu_movil')
 
