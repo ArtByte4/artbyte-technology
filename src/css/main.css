@@ -102,7 +102,7 @@ ul{
     flex-wrap: wrap;
 }
 .container-video-clip{
-    width: 80%;
+    /* width: 80%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,6 +230,8 @@ ul{
     padding: 3px;
 }
 
+
+
 .resumen-text{
     width: 50%;
 }
@@ -250,8 +252,8 @@ ul{
         margin: 50px 0;
     }
     .container-video-clip iframe{
-        width: 80%;
-        height: 70%;
+        width: 290px;
+        height: 157px;
     }
 }
 
@@ -277,7 +279,7 @@ ul{
     align-items: center;
     flex-direction: column;
     position: relative;
-    height: 500px;
+    height: 600px;
 }
 .content-text{
     display: flex;
@@ -474,6 +476,81 @@ td {
 }
 
 
+
+/* ===== Footer ===== */
+
+
+footer{
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-footer{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.contact{
+    margin: 30px;
+}
+
+.logo-footer{
+    width: 150px;
+}
+
+
+/* ==== Diagrama de Gantt ==== */
+
+.diagramaGantt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.content-diagram{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-diagram h2{
+    font-size: var(--font-size-title);
+}
+
+.content-diagram img{
+    width: 90%;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:470px) {
     .resumen-text{
         width: 80%;
@@ -529,21 +606,18 @@ td {
         margin: 50px 0;
     }
     .container-video-clip iframe{
-        width: 90%;
+        /* width: 90%; */
         height: 80%;
     }
     .container-video-clip h2{
         width: 90%;
     }
-
-    footer {
-        background-color: black;
+    .content-diagram img{
         width: 100%;
-        height: 40px;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
+    .content-diagram{
+        width: 100%;
+    }
+
 }
 
