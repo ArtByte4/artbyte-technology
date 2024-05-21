@@ -236,28 +236,6 @@ ul{
     width: 50%;
 }
 
-@media (max-width: 700px) {
-    .container-sec-resumen{
-        width: 90%;
-    }
-    .container-inter{
-        width: 40%;
-        margin: 10px;
-    }
-    .container-video-clip{
-        width: 90%;
-        flex-wrap: wrap-reverse;
-    }
-    .container-video-clip h2{
-        margin: 50px 0;
-    }
-    .container-video-clip iframe{
-        width: 290px;
-        height: 157px;
-    }
-}
-
-
 
 
 /* ===== Document ===== */
@@ -533,20 +511,82 @@ footer{
 }
 
 
+/* ===== Modelos base de datos ===== */
+
+.modelosBaseDatos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.modelosBaseDatos h2{
+    font-size: var(--font-size-title);
+}
+
+.contentBD{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-container{
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--color-primary);
+    padding: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 50px;
+    /* background-color: #3bff834d; */
+} 
+
+.card-container:hover{
+   border: 4px dotted;
+}
+
+.card-container img{
+    /* width: 300px; */
+    width: 100%;
+    height: 100%;
+}
+
+.card-container p{
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-primary);
+    color: var(--color-secundary);
+    text-align: center;
+    font-size: var(--font-size-text);
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+@media (max-width: 700px) {
+    .container-sec-resumen{
+        width: 90%;
+    }
+    .container-inter{
+        width: 40%;
+        margin: 10px;
+    }
+    .container-video-clip{
+        width: 90%;
+        flex-wrap: wrap-reverse;
+    }
+    .container-video-clip h2{
+        margin: 50px 0;
+    }
+    .container-video-clip iframe{
+        width: 290px;
+        height: 157px;
+    }
+}
 
 
 
@@ -618,6 +658,13 @@ footer{
     .content-diagram{
         width: 100%;
     }
+    .contentBD{
+        width: 95%;
+    }
+    .card-container{
+        width: 270px;
+        height: 270px;
+    } 
 
 }
 
