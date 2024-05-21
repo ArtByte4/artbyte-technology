@@ -16,7 +16,8 @@ Somos un equipo que busca implementar una nueva tecnologia a futuro, una maquina
 
 ## Nuestro diagrama de gantt 👀
 ***Ruta para el diagrama de Ganntt***
-- [Diagrama de Ganntt](https://github.com/ArtByte4/artbyte-technology/blob/main/src/docs/DiagramaDeGanntt-ArtByte-Fase-Analisis.mpp)
+- [Diagrama de Ganntt](https://github.com/ArtByte4/artbyte-technology/blob/main/src/img/diagrama-Gantt.jpeg)
+
 
 
 
