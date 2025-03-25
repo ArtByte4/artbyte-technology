@@ -1,174 +1,184 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'Phenomen';
-    src: url('./WEB/Phenomena-Light.woff') format('woff');
+  font-family: "Phenomen";
+  src: url("./WEB/Phenomena-Light.woff") format("woff");
 }
 
-body{
-    font-family: 'Phenomen';
+body {
+  font-family: "Phenomen";
 }
-:root{
-    --color-primary: #030d33;
-    --color-secundary: #e5e5e5;
-    --color-terciaryo: #3bff83;
-    --color-cuaternaryo: #5f00e5;
-    --font-size-text: 18px;
-    --font-size-title: 32px;
-    --font-size-big: 39px;
+:root {
+  --color-primary: #030d33;
+  --color-secundary: #e5e5e5;
+  --color-terciaryo: #3bff83;
+  --color-cuaternaryo: #5f00e5;
+  --font-size-text: 18px;
+  --font-size-title: 32px;
+  --font-size-big: 39px;
 }
 
-
-
-.logo{
-    /* width: 100px;
+.logo {
+  /* width: 100px;
     margin: 20px; */
-    width: 20px;
-    margin: 20px;
+  width: 20px;
+  margin: 20px;
 }
 
-.nav{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    z-index:5;
-    /* background-color: var(--color-secundary); */
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  /* background-color: var(--color-secundary); */
 }
 
-
-.content-nav{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.content-nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
-.links{
-    text-decoration: none;
-    color:var(--color-secundary);
-    font-size: var(--font-size-text);
-    padding: 5px 15px;
-
+.links {
+  text-decoration: none;
+  color: var(--color-secundary);
+  font-size: var(--font-size-text);
+  padding: 5px 15px;
 }
 
-.links:hover{
-    transition: 2s;
-    background-color: var(--color-terciaryo);
-    color: var(--color-primary);
+.links:hover {
+  transition: 2s;
+  background-color: var(--color-terciaryo);
+  color: var(--color-primary);
 }
 
-li{
-    list-style: none;
-    padding:10px;
-    /* margin-left: 40px; */
+li {
+  list-style: none;
+  padding: 10px;
+  /* margin-left: 40px; */
 }
 
-ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.btn-menu{
-    display: none;
-    cursor: pointer;
+.btn-menu {
+  display: none;
+  cursor: pointer;
 }
 
 @media (max-width: 570px) {
-    .btn-menu{
-        display: flex;
-    }
-    .link-list{
-        display: none;
-    }
+  .btn-menu {
+    display: flex;
+  }
+  .link-list {
+    display: none;
+  }
 }
 
 /* === bloques de semestres === */
 
 .container-view-semestres {
-    max-width: 100%;
-    height: 150vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-primary);
-    padding: 20px; /* Espacio dentro de la vista */
+  max-width: 100%;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  padding: 20px; /* Espacio dentro de la vista */
 }
 
 .bloques-semestres {
-    width: 80%;
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap; /* Permitir que los elementos se ajusten en nuevas filas */
-    justify-content: space-between; /* Distribuir los elementos de forma uniforme */
-    gap: 200px; /* Espaciado entre los elementos */
-    align-items: flex-start; /* Alinear los elementos desde arriba */
-    /* flex-direction: column; */
+  width: 70%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten en nuevas filas */
+  justify-content: space-between; /* Distribuir los elementos de forma uniforme */
+  gap: 200px; /* Espaciado entre los elementos */
+  align-items: flex-start; /* Alinear los elementos desde arriba */
+  /* flex-direction: column; */
 }
 
-.bloq{
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
+.bloq {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-.bloq-2{
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-
+.bloq-2 {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-
-.btn-semestre-left, .btn-semestre-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Asegura que los elementos internos estén en columna */
-    width: 100%; /* Asegura que ocupen el 100% disponible */
-    max-width: 300px; /* Limitar el ancho máximo para que no se expandan demasiado */
-    padding: 20px;
-    box-sizing: border-box;
-    position: relative;
-    margin-bottom: 20px; /* Ajuste para dejar espacio entre los botones */
+.btn-semestre-left,
+.btn-semestre-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Asegura que los elementos internos estén en columna */
+  width: 100%; /* Asegura que ocupen el 100% disponible */
+  max-width: 380px; /* Limitar el ancho máximo para que no se expandan demasiado */
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 20px; /* Ajuste para dejar espacio entre los botones */
 }
 
 .btn-semestre-left {
-    justify-content: flex-start; /* Alineamos a la izquierda */
+  justify-content: flex-start; /* Alineamos a la izquierda */
 }
 
 .btn-semestre-right {
-    justify-content: flex-end; /* Alineamos a la derecha */
+  justify-content: flex-end; /* Alineamos a la derecha */
 }
 
-.btn-semestre-left img, .btn-semestre-right img {
-    max-width: 100px;
-    height: auto;
-    margin-bottom: 10px; /* Separar las imágenes entre sí */
+.btn-semestre-left img,
+.btn-semestre-right img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px; /* Separar las imágenes entre sí */
 }
 
-.person_1, .person_2, .person_3, .person_4 {
-    position: absolute;
-    top: 0;
+.person_1,
+.person_2,
+.person_3,
+.person_4,
+.person_5 {
+  position: absolute;
+  top: 0;
 }
 
-.person_1 { left: 0; }
-.person_2 { left: 70px; }
-.person_3 { left: 140px; }
-.person_4 { left: 210px; }
+.person_1 {
+  left: 0;
+}
+.person_2 {
+  left: 70px;
+}
+.person_3 {
+  left: 140px;
+}
+.person_4 {
+  left: 210px;
+}
+.person_5 {
+  left: 285px;
+}
 
-.btn-semestre-left a, .btn-semestre-right a {
+.btn-semestre-left .especial-a {
     position: absolute;
     width: 300px;
     top: 140px;
@@ -180,4 +190,21 @@ ul{
     border-radius: 7px;
     padding: 10px;
     text-decoration: none;
+  }
+
+.btn-semestre-left a,
+.btn-semestre-right a {
+  position: absolute;
+  width: 370px;
+  top: 140px;
+  left: 10px;
+  font-size: 40px;
+  background-color: var(--color-terciaryo);
+  color: var(--color-primary);
+  text-align: center;
+  border-radius: 7px;
+  padding: 10px;
+  text-decoration: none;
 }
+
+
