@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: "Phenomen";
+    src: url("./WEB/Phenomena-Light.woff") format("woff");
+  }
+  
+  body {
+    font-family: "Phenomen";
+    background-color: var(--color-primary);
+  }
+  :root {
+    --color-primary: #030d33;
+    --color-secundary: #e5e5e5;
+    --color-terciaryo: #3bff83;
+    --color-cuaternaryo: #5f00e5;
+    --font-size-text: 18px;
+    --font-size-title: 32px;
+    --font-size-big: 39px;
+  }
+  
+  .logo {
+    /* width: 100px;
+      margin: 20px; */
+    width: 20px;
+    margin: 20px;
+  }
+  
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    /* position: fixed;
+    top: 0;
+    z-index: 5; */
+    /* background-color: var(--color-secundary); */
+  }
+  
+  .content-nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .links {
+    text-decoration: none;
+    color: var(--color-secundary);
+    font-size: var(--font-size-text);
+    padding: 5px 15px;
+  }
+  
+  .links:hover {
+    transition: 2s;
+    background-color: var(--color-terciaryo);
+    color: var(--color-primary);
+  }
+  
+  li {
+    list-style: none;
+    padding: 10px;
+    /* margin-left: 40px; */
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 570px) {
+    .btn-menu {
+      display: flex;
+    }
+    .link-list {
+      display: none;
+    }
+  }
+
+  
+
+  /* Contaniner semestre */
+
+.container-semestre {
+    /* background: var(--color-primary); */
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-semestre{
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.especial{
+    color: var(--color-terciaryo);
+}
+
+.title{
+    font-size: 40px;
+    color: var(--color-secundary);
+}
+
+.espcial{
+    color: var(--color-terciaryo);
+}
+
+.item-entregable{
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+.card-entrega{
+    max-width: 250px;
+    /* border-radius: 5px; */
+    
+
+}
+.bd{
+    box-shadow: 0px 0px 5px 2px var(--color-terciaryo);
+}
+.doc{
+    box-shadow: 0px 0px 5px 2px #3780e1;
+}
+.mk{
+    box-shadow: 0px 0px 5px 2px #FFC857;
+}
+
+.item-card{
+    background: rgba(131, 136, 131, 0.103);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+
+}
+.description{
+    color: var(--color-secundary);
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.description:hover{
+    background-color: rgba(128, 128, 128, 0.184);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-entrega img{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.extra{
+    color: var(--color-secundary);
+    padding: 10px;
+}
+
