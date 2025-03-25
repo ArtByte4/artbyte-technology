@@ -23,6 +23,24 @@ body{
     --font-size-big: 39px;
 }
 
+
+/* Nueva pagina */
+.container-new-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    background-color: var(--color-terciaryo);
+    font-size: 30px;
+}
+.container-new-page a{
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* === scroll === */
 body::-webkit-scrollbar {
     width: 12px;           
